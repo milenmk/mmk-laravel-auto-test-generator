@@ -1,15 +1,30 @@
 {
-    "name": "thomyl/laravel-auto-test-generator",
+    "name": "milenmk/mmk-laravel-auto-test-generator",
     "description": "Laravel >=6 package for generating unit test automatically",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
             "name": "Thomy L",
             "email": "thomy.lorenzatti@epitech.eu"
+        },
+        {
+            "name": "Milen Karaganski",
+            "email": "milenmk@gmail.com"
+        }
+    ],
+    "repository": [
+        {
+            "type": "git",
+            "url": "https://github.com/milenmk/mmk-laravel-auto-test-generator"
         }
     ],
     "require": {
+        "php": "^8.0",
         "fakerphp/faker": "^1.24"
+    },
+    "conflict": {
+        "laravel/framework": "<9.0"
     },
     "autoload": {
         "psr-4": {
@@ -22,5 +37,7 @@
                 "thomyl\\LaravelAutoTestGenerator\\TestGeneratorServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
